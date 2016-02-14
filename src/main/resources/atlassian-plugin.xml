@@ -3,16 +3,23 @@
         <description>${project.description}</description>
         <version>${project.version}</version>
         <vendor name="${project.organization.name}" url="${project.organization.url}" />
-        <param name="plugin-icon">images/pluginIcon.png</param>
-        <param name="plugin-logo">images/pluginLogo.png</param>
+        <param name="plugin-icon">images/swagger-logo_16.png</param>
+        <param name="plugin-logo">images/swagger-logo_80.png</param>
     </plugin-info>
     
-    <xhtml-macro name="Swagger" class="org.pixnbits.atlassian.swagger.SwaggerMacro" key="my-macro">
+    <xhtml-macro
+    	name="Swagger"
+    	class="org.pixnbits.atlassian.swagger.SwaggerMacro"
+    	key="swagger"
+    	icon="/download/resources/${project.groupId}.${project.artifactId}/images/swagger-logo_80.png"
+    >
     	<parameters/>
     </xhtml-macro>
 
     <!-- add our i18n resource -->
     <resource type="i18n" name="i18n" location="confluence-macro-swagger"/>
+    
+    <resource type="download" name="images/" location="/images"/>
     
     <!-- add our web resources -->
     <web-resource key="confluence-macro-swagger-resources" name="confluence-macro-swagger Web Resources">
