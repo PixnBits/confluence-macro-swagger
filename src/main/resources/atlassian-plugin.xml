@@ -6,6 +6,10 @@
         <param name="plugin-icon">images/pluginIcon.png</param>
         <param name="plugin-logo">images/pluginLogo.png</param>
     </plugin-info>
+    
+    <xhtml-macro name="Swagger" class="org.pixnbits.atlassian.swagger.SwaggerMacro" key="my-macro">
+    	<parameters/>
+    </xhtml-macro>
 
     <!-- add our i18n resource -->
     <resource type="i18n" name="i18n" location="confluence-macro-swagger"/>
